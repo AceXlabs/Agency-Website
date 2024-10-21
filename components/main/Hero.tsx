@@ -12,10 +12,10 @@ import {
 } from "@/components/farmui/ShinyLights";
 
 export default function FUIDarkHeroSectionWithScrolls() {
-  const navigation = [
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Careers", path: "javascript:void(0)" },
-  ];
+  // const navigation = [
+  //   { title: "Customers", path: "javascript:void(0)" },
+  //   { title: "Careers", path: "javascript:void(0)" },
+  // ];
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -59,8 +59,7 @@ export default function FUIDarkHeroSectionWithScrolls() {
                 aria-hidden
                 className="pointer-events-none absolute inset-0 opacity-0 group-hover/button:[animation-delay:.2s] group-hover/button:animate-shineButton rounded-[inherit] bg-[length:200%_100%] bg-[linear-gradient(110deg,transparent,35%,rgba(255,255,255,.7),75%,transparent)]"
               />
-            </button>
-
+            </button>     
             <dl className="grid grid-cols-2 gap-y-6 gap-x-10 mt-10 sm:gap-y-10 sm:gap-x-16 sm:mt-16 sm:text-center lg:grid-cols-none lg:grid-flow-col lg:auto-cols-auto lg:justify-start lg:text-left">
               {[
                 ["Speakers", "18"],
