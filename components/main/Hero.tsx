@@ -24,8 +24,8 @@ export default function FUIDarkHeroSectionWithScrolls() {
       <TopRightShiningLight />
       <TopLeftShiningLight />
       <div className="absolute -z-1 inset-0  h-[600px] w-full bg-transparent opacity-5 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
-      <div className="justify-between md:flex">
-        <Container className="relative py-20 ml-auto sm:pt-36 sm:pb-24">
+      <div className="justify-between md:flex h-full">
+        <Container className="relative py-20 ml-auto sm:pt-36 sm:pb-24 mb-12">
           <div ref={ref} className="mx-auto max-w-2xl lg:px-12 lg:max-w-4xl">
             <GradualSpacing
               textClassName="justify-start"
@@ -59,7 +59,7 @@ export default function FUIDarkHeroSectionWithScrolls() {
                 aria-hidden
                 className="pointer-events-none absolute inset-0 opacity-0 group-hover/button:[animation-delay:.2s] group-hover/button:animate-shineButton rounded-[inherit] bg-[length:200%_100%] bg-[linear-gradient(110deg,transparent,35%,rgba(255,255,255,.7),75%,transparent)]"
               />
-            </button>     
+            </button>
             <dl className="grid grid-cols-2 gap-y-6 gap-x-10 mt-10 sm:gap-y-10 sm:gap-x-16 sm:mt-16 sm:text-center lg:grid-cols-none lg:grid-flow-col lg:auto-cols-auto lg:justify-start lg:text-left">
               {[
                 ["Speakers", "18"],
