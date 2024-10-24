@@ -1,6 +1,6 @@
 
 import Accordian from "@/components/Accordian";
-import ContactPage from "@/components/Contatc";
+import ContactPage from "@/components/Contact";
 import HeroSection from "@/components/main/Hero";
 
 import Services from "@/components/Services";
@@ -14,8 +14,6 @@ export default function Home() {
       <Accordian/>
       <TeamPage/>
       <ContactPage/>
-    
-
     </>
   );
 }

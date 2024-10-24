@@ -3,6 +3,7 @@
 import { useState, FormEvent } from 'react';
 import Container from './Container';
 import Topic from './Topic';
+import Image from 'next/image';
 
 
 type ContactType = 'sayHi' | 'getQuote';
@@ -146,7 +147,7 @@ const ContactPage = () => {
         </div>
 
         <div className="hidden md:grid md:justify-items-end md:w-4/12 md:py-2 invert">
-          <img src="./clients/contact.svg" alt="contact illustration" width="80%" />
+        <Image src="./clients/contact.svg" alt="contact illustration" className='w-[80%]' width={400} height={400} />
         </div>
       </div>
     </Container>
