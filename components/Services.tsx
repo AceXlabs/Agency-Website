@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { servicesData } from "@/data/service";
 import Container from "./Container";
 import Topic from "./Topic";
@@ -20,7 +21,7 @@ function Services() {
         <div className="flex-row items-center py-5">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
             {servicesData.map(
-              ({ background, name1, name2, arrow, link, image },index) => (
+              ({ name1, name2, arrow, link, image },index) => (
                 <div key={index} className={`h-[310px] p-12 bg-zinc-100 dark:bg-background rounded-[45px] border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] border   justify-between items-center flex text-black dark:text-white`}>
                   <div className="flex-col justify-center items-start gap-[93px] inline-flex">
                     <div className="flex-col justify-start items-start flex">
@@ -39,6 +40,7 @@ function Services() {
                         <img
                           className="w-[41px] h-[41px] left-0 top-0 absolute "
                           src={arrow}
+                          alt="image"
                         />
                       </div>
                       <div className="text-xl font-normal leading-7">
@@ -47,7 +49,7 @@ function Services() {
                     </Link>
                   </div>
                   <div className="w-[210px] h-[170px] pt-0.5 pb-[1.95px] justify-center items-center flex">
-                    <img className="hidden md:block invert" src={image} />
+                    <img className="hidden md:block invert" src={image} alt="image"/>
                   </div>
                 </div>
               )
