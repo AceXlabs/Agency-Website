@@ -20,8 +20,8 @@ function Services() {
         <div className="flex-row items-center py-5">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
             {servicesData.map(
-              ({ background, name1, name2, arrow, link, image }) => (
-                <div className={`h-[310px] p-12 bg-zinc-100 dark:bg-background rounded-[45px] border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] border   justify-between items-center flex text-black dark:text-white`}>
+              ({ background, name1, name2, arrow, link, image },index) => (
+                <div key={index} className={`h-[310px] p-12 bg-zinc-100 dark:bg-background rounded-[45px] border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] border   justify-between items-center flex text-black dark:text-white`}>
                   <div className="flex-col justify-center items-start gap-[93px] inline-flex">
                     <div className="flex-col justify-start items-start flex">
                       <div className="px-[7px] rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
