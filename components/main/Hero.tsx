@@ -2,7 +2,6 @@
 "use client";
 
 import React, { useRef } from "react";
-import clsx from "clsx";
 import { MarqueeDemoVertical } from "@/components/farmui/Scrolls";
 import GradualSpacing from "@/components/farmui/GradualSpacing";
 import { useInView } from "framer-motion";

@@ -34,7 +34,8 @@ export const Process =
 
 
 export const teamData= [
-    {
+    {   
+        "id":1,
         "title": "CEO and Founder",
         "name": "John Smith",
         "description": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
@@ -42,6 +43,7 @@ export const teamData= [
         "link": "/"
     },
     {
+        "id":2,
         "title": "Director of Operations",
         "name": "Jane Doe",
         "description": "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
@@ -49,6 +51,7 @@ export const teamData= [
         "link": "/"
     },
     {
+        "id":3,
         "title": "Senior SEO Specialist",
         "name": "Michael Brown",
         "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",

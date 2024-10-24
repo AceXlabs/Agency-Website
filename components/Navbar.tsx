@@ -1,26 +1,14 @@
 
 "use client"
 import { useState } from 'react';
-
 import Link from 'next/link';
-
 import Container from './Container';
+import { menuItems } from '@/data/menuitems';
 
-interface MenuItem {
-  href: string;
-  label: string;
-}
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems: MenuItem[] = [
-    { href: '/about', label: 'About us' },
-    { href: '/#services', label: 'Services' },
-    { href: '/#projects', label: 'Use Cases' },
-    { href: '/pricing', label: 'Pricing' },
-    { href: '/articles', label: 'Blog' },
-  ];
 
   const navButton = {
     href: '/',
@@ -38,13 +26,6 @@ const Navigation = () => {
           <header className="flex flex-col lg:flex-row justify-between items-center my-5">
             <div className="flex w-full lg:w-auto items-center justify-between">
               <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse text-4xl font-bold">
-                {/* <Image 
-                  src="/Logo.svg" 
-                  alt="Logo" 
-                  width={32} 
-                  height={32} 
-                  className="h-8 w-auto"
-                /> */}
                 AceXlabs
               </Link>
               <button
@@ -79,8 +60,8 @@ const Navigation = () => {
               } w-full lg:w-auto lg:flex lg:mt-0 rounded-[20px]`}
             >
               <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-[20px] lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
-                {menuItems.map((item) => (
-                  <li key={item.href}>
+              {menuItems.map((item, index) => (
+                  <li key={index}>
                     <Link
                       href={item.href}
                       className="block py-2 px-3  rounded lg:bg-transparent lg:p-0 hover:text-gray-600 transition-colors"

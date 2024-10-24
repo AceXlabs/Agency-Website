@@ -1,24 +1,19 @@
-/* eslint-disable @next/next/no-img-element */
-"use client"
-import { teamData } from "@/data/process";
-import Container from "./Container";
-import Topic from "./Topic";
-import { useRouter } from "next/navigation";
 import { TeamMember } from "@/data/TeamMember";
 
+interface TeamSectionProps {
+    teamData: TeamMember[];
+  } 
 
-const TeamPage = () => {
-  const router = useRouter();
-
+/* eslint-disable @next/next/no-img-element */
+export const TeamSection = ({ teamData }: TeamSectionProps) => {
   return (
-    <Container>
-      <div className="relative flex flex-col items-center md:flex-row pt-6">
-        <Topic
-          title="Team"
-          description="Meet the skilled and experienced team behind our successful digital marketing strategies"
-        />
-      </div>
-
+    <>
+      <h2
+        id="team"
+        className="mb-2 mt-10 text-2xl font-bold leading-relaxed sm:mt-20"
+      >
+        Meet the team
+      </h2>
       <div className="flex-row items-center py-5" id="team">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
           {teamData.map((member: TeamMember) => (
@@ -51,22 +46,6 @@ const TeamPage = () => {
           ))}
         </div>
       </div>
-
-      <div className="w-full justify-center md:justify-end items-center inline-flex mr-7">
-        <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
-        onClick={()=>{
-          router.push("/team");
-        }}
-        >
-          See All
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 opacity-0 group-hover/button:[animation-delay:.2s] group-hover/button:animate-shineButton rounded-[inherit] bg-[length:200%_100%] bg-[linear-gradient(110deg,transparent,35%,rgba(255,255,255,.7),75%,transparent)]"
-          />
-        </button>
-      </div>
-    </Container>
+    </>
   );
 };
-
-export default TeamPage;
