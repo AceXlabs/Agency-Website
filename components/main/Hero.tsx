@@ -29,28 +29,26 @@ export default function FUIDarkHeroSectionWithScrolls() {
             <GradualSpacing
               textClassName="justify-start"
               visiblity={isInView}
-              className="max-w-[400px] text-4xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
-              text={"A design conference"}
+              className="max-w-[400px] text-3xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
+              text={"From Concept to Creation"}
               />
             <GradualSpacing
               textClassName="justify-start"
               visiblity={isInView}
-              className="max-w-[400px] text-3xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
-              text={"for a dark side"}
+              className="max-w-[400px] text-2xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
+              text={"Making Ideas Happen"}
               />
-            
+
+           
     
             <div className="mt-6 space-y-6 tracking-tight text-gray-500 sm:text-xl font-geist text-md">
               <p>
-                The next generation of web users are tech-savvy and suspicious.
-                They know how to use dev tools, they can detect a phishing scam
-                from a mile away, and they certainly aren’t accepting any checks
-                from Western Union.
+              From sleek websites to scalable SaaS platforms and innovative MVPs, 
+              we specialize in building with JavaScript, Golang, Rust, and Web3 technologies.
               </p>
               <p>
-                At DeceptiConf you’ll learn about the latest dark patterns being
-                developed to trick even the smartest visitors, and you’ll learn
-                how to deploy them without ever being detected.
+              Whether you need robust web applications or blockchain-powered products, 
+              our agency is your go-to partner in turning concepts into impactful digital experiences.
               </p>
             </div>
             <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70">
