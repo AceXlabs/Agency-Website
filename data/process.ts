@@ -8,27 +8,27 @@ export const Process =
     {
         "index": 2,
         "label": "Research",
-        "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        "content": "Our team conducts in-depth research to analyze your industry, target audience, and competition. We gather insights to guide a strategy that is both data-driven and customer-focused."
     },
     {
         "index": 3,
         "label": "Implementation",
-        "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        "content": "With a clear strategy in place, we proceed to implement solutions across web development, app development, or web3, ensuring they are optimized for performance and scalability."
     },
     {
         "index": 4,
         "label": "Optimization",
-        "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        "content": "After the initial setup, we focus on refining and optimizing every aspect, including SEO, UI/UX, and backend performance, to enhance user experience and achieve measurable results."
     },
     {
         "index": 5,
         "label": "Reporting",
-        "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        "content": "We provide transparent reporting on the progress and impact of our work, using key metrics and data to measure success and identify areas for growth."
     },
     {
         "index": 6,
         "label": "Improvement",
-        "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        "content": "We continually assess and improve upon the project, integrating feedback and leveraging the latest technologies to ensure long-term success and adaptability."
     }
 ]
 
