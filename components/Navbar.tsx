@@ -1,19 +1,11 @@
-
-"use client"
-import { useState } from 'react';
-import Link from 'next/link';
-import Container from './Container';
-import { menuItems } from '@/data/menuitems';
-
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import Container from "./Container";
+import { menuItems } from "@/data/menuitems";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
-  const navButton = {
-    href: '/',
-    label: 'Request a quote'
-  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -25,7 +17,10 @@ const Navigation = () => {
         <Container>
           <header className="flex flex-col lg:flex-row justify-between items-center my-5">
             <div className="flex w-full lg:w-auto items-center justify-between">
-              <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse text-4xl font-bold">
+              <Link
+                href="/"
+                className="flex items-center space-x-3 rtl:space-x-reverse text-4xl font-bold"
+              >
                 AceXlabs
               </Link>
               <button
@@ -44,9 +39,7 @@ const Navigation = () => {
                   stroke="currentColor"
                 >
                   {isMenuOpen ? (
-                    <path d="M6 18L18 6M6 6l12 12" 
-                    
-                    />
+                    <path d="M6 18L18 6M6 6l12 12" />
                   ) : (
                     <path d="M4 6h16M4 12h16M4 18h16" />
                   )}
@@ -56,11 +49,11 @@ const Navigation = () => {
 
             <div
               className={`${
-                isMenuOpen ? 'block' : 'hidden'
+                isMenuOpen ? "block" : "hidden"
               } w-full lg:w-auto lg:flex lg:mt-0 rounded-[20px]`}
             >
               <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-[20px] lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
-              {menuItems.map((item, index) => (
+                {menuItems.map((item, index) => (
                   <li key={index}>
                     <Link
                       href={item.href}
@@ -71,30 +64,20 @@ const Navigation = () => {
                   </li>
                 ))}
                 <div className="lg:hidden flex items-center justify-center mt-3 gap-4">
-                  <Link
-                    className="px-9 py-5 rounded-2xl border border-gray-300   inline-flex transition-colors"
-                    href={navButton.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h2 className="text-center text-xl font-normal leading-7">
-                      {navButton.label}
-                    </h2>
+                  <Link href="https://cal.com/acex-labs" target="_blank">
+                    <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70">
+                      Book a call
+                    </button>
                   </Link>
                 </div>
               </ul>
             </div>
 
             <div className="hidden lg:flex items-center gap-4">
-              <Link
-                className="px-9 py-5 rounded-2xl border border-zinc-900 bg-white  text-black  inline-flex transition-colors"
-                href={navButton.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h2 className="text-center text-xl font-normal leading-7">
-                  {navButton.label}
-                </h2>
+              <Link href="https://cal.com/acex-labs" target="_blank">
+                <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70">
+                  Book a call
+                </button>
               </Link>
             </div>
           </header>
