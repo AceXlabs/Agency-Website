@@ -107,7 +107,7 @@ const ReviewCard = ({
 
 const MarqueeDemoVertical = () => {
   return (
-    <div className="flex overflow-hidden relative flex-row justify-center items-center bg-transparent ml-24 h-[100vh]">
+    <div className="flex overflow-hidden relative flex-row justify-center items-center bg-transparent ml-11 h-[100vh]">
       <Marquee pauseOnHover vertical className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
