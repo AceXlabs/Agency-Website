@@ -60,21 +60,6 @@ export default function FUIDarkHeroSectionWithScrolls() {
                 className="pointer-events-none absolute inset-0 opacity-0 group-hover/button:[animation-delay:.2s] group-hover/button:animate-shineButton rounded-[inherit] bg-[length:200%_100%] bg-[linear-gradient(110deg,transparent,35%,rgba(255,255,255,.7),75%,transparent)]"
                 />
             </button>
-            <dl className="grid grid-cols-2 gap-y-6 gap-x-10 mt-10 sm:gap-y-10 sm:gap-x-16 sm:mt-16 sm:text-center lg:grid-cols-none lg:grid-flow-col lg:auto-cols-auto lg:justify-start lg:text-left">
-              {[
-                ["Speakers", "18"],
-                ["People Attending", "2,091"],
-                ["Venue", "Staples Center"],
-                ["Location", "Los Angeles"],
-              ].map(([name, value]) => (
-                <div key={name}>
-                  <dt className="font-mono text-sm text-gray-300">{name}</dt>
-                  <dd className="mt-0.5 text-2xl font-normal tracking-tight text-gray-300 font-geist">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
           </div>
       
         <div className="hidden  md:block ">
