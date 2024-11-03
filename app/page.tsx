@@ -10,14 +10,15 @@ import TeamPage from "@/components/main/team/Team";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <HeroSection />
-      <Services />
-      <Accordian/>
+      {/* <Accordian/> */}
       <TeamPage/>
       <PricingSection/>
+
+      <Services />
       <ContactPage/>
-      <Bottom/>
-    </>
+      {/* <Bottom/> */}
+    </div>
   );
 }
