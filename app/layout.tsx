@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from 'next/font/google';
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/main/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",

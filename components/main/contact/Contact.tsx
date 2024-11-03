@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, FormEvent } from 'react';
-import Container from './Container';
-import Topic from './Topic';
+import Container from '../../shared/Container';
+import Topic from '../../shared/Topic';
 import Image from 'next/image';
 
 

@@ -8,7 +8,7 @@ import {
   TopLeftShiningLight,
   TopRightShiningLight,
 } from "@/components/farmui/ShinyLights";
-import Container from "../Container";
+import Container from "../../shared/Container";
 import Link from "next/link";
 
 export default function FUIDarkHeroSectionWithScrolls() {
@@ -49,13 +49,13 @@ export default function FUIDarkHeroSectionWithScrolls() {
                   into impactful digital experiences.
                 </p>
               </div>
-              <div className="flex max-sm:flex-col md:gap-4 ">
+              <div className="flex max-sm:flex-col md:gap-4">
                 <Link href="https://cal.com/acex-labs" target="_blank">
-                  <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70">
+                  <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70 max-md:mr-4">
                     Book a call
                   </button>
                 </Link>
-                <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-black rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit font-geist text-md text-white ring-white/80 ring-offset-black hover:scale-[1.02] active:scale-[0.98] active:ring-white/70">
+                <button className="flex gap-2 justify-center items-center py-2 max-sm:px-4 px-10 mt-5 text-lg tracking-tighter text-center bg-black rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit font-geist text-md text-white ring-white/80 ring-offset-black hover:scale-[1.02] active:scale-[0.98] active:ring-white/70">
                   Share your vision
                 </button>
               </div>

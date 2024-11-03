@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Container from "./Container";
+import Container from "../../shared/Container";
 import { menuItems } from "@/data/menuitems";
 
 const Navigation = () => {
