@@ -36,27 +36,98 @@ export const Process =
 export const teamData= [
     {   
         "id":1,
-        "title": "CEO and Founder",
-        "name": "John Smith",
-        "description": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
-        "profile": "https://pbs.twimg.com/profile_images/1764600506721116160/ZI5JGcHu_400x400.jpg",
-        "link": "/"
-    },
+        "title": "Senior Engineer",
+        "name": "Pratik Tiwari",
+        "description": "8+ Years in fullstack engineering building products across various domains.",
+        "profile": "https://avatars.githubusercontent.com/u/64960569?v=4",
+        "link": "https://x.com/pratikcodes_"
+    },  
     {
         "id":2,
-        "title": "Director of Operations",
-        "name": "Jane Doe",
-        "description": "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
-        "profile": "https://avatars.githubusercontent.com/u/64960569?v=4",
-        "link": "/"
+        "title": "Senior AI Engineer",
+        "name": "Jacques",
+        "description": "9+ years of experience in AI and Machine Learning. Proficient in NLP and Computer Vision.",
+        "profile": "https://pbs.twimg.com/profile_images/1764600506721116160/ZI5JGcHu_400x400.jpg",
+        "link": "https://x.com/jacques_web3/"
     },
     {
         "id":3,
-        "title": "Senior SEO Specialist",
-        "name": "Michael Brown",
-        "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-        "profile": "https://avatars.githubusercontent.com/u/57027429?v=4",
-        "link": "/"
+        "title": "Smart Contract Engineer",
+        "name": "Axat Bhardwaj",
+        "description": "6+ years of experience in web3, building scalable and secure applications.",
+        "profile": "https://pbs.twimg.com/profile_images/1847924192085479424/d8vknhTn_400x400.jpg",
+        "link": "https://x.com/axatbhardwaj"
+    },
+    {
+        "id":4,
+        "title": "Mobile Dev Expert",
+        "name": "Satyam Shubham",
+        "description": "5+ years of experience in React Native, building cross-platform and native applications.",
+        "profile": "https://pbs.twimg.com/profile_images/1742571411561218048/iZzWZcXb_400x400.jpg",
+        "link": "https://x.com/itsflash_10"
+    },
+    {
+        "id":5,
+        "title": "SEO & Marketing Expert",
+        "name": "Priyant Jharwal",
+        "description": "5+ Years experience In SEO, Keyword research, Marketing, Research Analysis.",
+        "profile": "https://pbs.twimg.com/profile_images/1849422082914058240/20pnPPey_400x400.jpg",
+        "link": "https://x.com/priyant_jharwal"
+    },
+    {
+        "id":6,
+        "title": "Software Architect",
+        "name": "Tux",
+        "description": "10+ years of experience in Software Development.",
+        "profile": "https://pbs.twimg.com/profile_images/1830628430380990464/Y2SSb8li_400x400.jpg",
+        "link": "https://x.com/tuxdotrs"
+    },
+    {
+        "id":7,
+        "title": "Full Stack Developer",
+        "name": "Anurag Negi",
+        "description": "2+ years of experience in Full Stack Development.",
+        "profile": "https://avatars.githubusercontent.com/u/115611556?v=4",
+        "link": "https://x.com/anuragnegi000"
+    },
+    {
+        "id":8,
+        "title": "Full Stack Developer",
+        "name": "Rudra Sankha Sinhamahapatra",
+        "description": "2+ years of experience in Full Stack Development.",
+        "profile": "https://pbs.twimg.com/profile_images/1842418196982194176/5mfeBL38_400x400.jpg",
+        "link": "https://x.com/RudraSankha?t=5Buuc4ndJ35S9iLQoAUstg&s=09"
+    },
+    {
+        "id":9,
+        "title": "Full Stack Developer",
+        "name": "Anshuman",
+        "description": "2+ years of experience in Full Stack Development.",
+        "profile": "https://pbs.twimg.com/profile_images/1850443231701458944/J2zkAYzZ_400x400.jpg",
+        "link": "https://x.com/anshu_code"
+    },
+    {
+        "id":10,
+        "title": "Full Stack Blockchain Developer",
+        "name": "Prince Yadav",
+        "description": "2+ years of experience in Full Stack Blockchain Development.",
+        "profile": "https://avatars.githubusercontent.com/u/69517192?v=4",
+        "link": "https://x.com/m_jinprince"
+    },
+    {
+        "id":11,
+        "title": "Senior Backend Developer",
+        "name": "Shubham Singh",
+        "description": "4+ years of experience working in MERN, Rust and Go.",
+        "profile": "https://pbs.twimg.com/profile_images/1508167658315071488/KUevX0QK_400x400.jpg",
+        "link": "https://x.com/shubh_exists"
+    },
+    {
+        "id":12,
+        "title": "Smart Contract Developer",
+        "name": "Krishna",
+        "description": "2+ years of experience Smart Contract development and testing",
+        "profile": "https://pbs.twimg.com/profile_images/1812866453559037952/j8_E3M93_400x400.jpg",
+        "link": "https://x.com/shubh_exists"
     }
-
 ]
