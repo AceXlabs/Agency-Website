@@ -5,15 +5,22 @@ import { usePathname, useRouter } from "next/navigation"
 import { MvpCard } from "./MvpCard"
 import { StartupCard } from "./StartupCard"
 import { GrowthCard } from "./GrowthCard"
+import Topic from "../shared/Topic"
 
 export default function Component() {
   const router = useRouter();
   const currentPath = usePathname();
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-7xl ">
+    <div className="container mx-auto px-4 py-16 max-w-7xl pt-[10rem]">
+      <div className="relative flex flex-col items-center md:flex-row">
+        <Topic
+          title="Pricing"
+          description="Meet the skilled and experienced team behind our successful digital marketing strategies"
+        />
+      </div>
       <div className="grid md:grid-cols-3 gap-8">
-        {/* MVP Development Package Card */}
+        {/* MVP Development Package Card rand*/}
         <MvpCard/>
         {/* Startup Booster Package Card */}
         <StartupCard/>
