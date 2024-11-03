@@ -10,5 +10,5 @@ export const menuItems: MenuItem[] = [
     { href: '/team', label: 'Team' },
     { href: '/#projects', label: 'Use Cases' },
     { href: '/pricing', label: 'Pricing' },
-    { href: '/articles', label: 'Blog' },
+    { href: '/', label: 'Home' },
   ];
