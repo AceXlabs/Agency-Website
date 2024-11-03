@@ -26,7 +26,7 @@ export default function Component() {
             <p className="text-red-600 mb-8">20% off for early adopters</p>
             
             <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">What's Included:</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">What&apos;s Included:</h3>
               <ul className="space-y-4">
                 {[
                   "Complete MVP development in 2-3 weeks",
@@ -71,7 +71,7 @@ export default function Component() {
             <p className="text-gray-400 mb-8">Billed quarterly, 3-month minimum</p>
             
             <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-4 text-white">What's Included:</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">What&apos;s Included:</h3>
               <ul className="space-y-4">
                 {[
                   "120 hours of development time per quarter",
