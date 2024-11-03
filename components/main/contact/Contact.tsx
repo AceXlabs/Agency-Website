@@ -55,7 +55,7 @@ const ContactPage = () => {
         />
       </div>
       
-      <div className="relative flex flex-col items-center md:flex-row my-6 bg-gray-900 rounded-[45px]">
+      <div className="relative flex flex-col items-center md:flex-row my-6 bg-transparent bg-zinc-100 dark:bg-background rounded-[45px] border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] border  ">
         <div className="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
           <form onSubmit={handleSubmit} className="space-y-8 md:w-full">
             <div className="flex">

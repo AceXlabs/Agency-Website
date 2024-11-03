@@ -11,7 +11,7 @@ export default function Component() {
   const currentPath = usePathname();
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-7xl ">
+    <div className="container mx-auto px-4 py-16 max-w-7xl pt-[10rem]">
       <div className="grid md:grid-cols-3 gap-8">
         {/* MVP Development Package Card */}
         <MvpCard/>
