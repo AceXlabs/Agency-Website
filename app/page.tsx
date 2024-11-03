@@ -1,5 +1,5 @@
-import Accordian from "@/components/main/accordian/Accordian";
-import { Bottom } from "@/components/main/bottom/Bottom";
+// import Accordian from "@/components/main/accordian/Accordian";
+// import { Bottom } from "@/components/main/bottom/Bottom";
 import ContactPage from "@/components/main/contact/Contact";
 import HeroSection from "@/components/main/hero/Hero";
 import PricingSection from "@/components/Pricing/PricingSection";
