@@ -1,5 +1,6 @@
 
 import Accordian from "@/components/Accordian";
+import { Bottom } from "@/components/Bottom";
 import ContactPage from "@/components/Contact";
 import HeroSection from "@/components/main/Hero";
 import PricingSection from "@/components/Pricing/PricingSection";
@@ -16,7 +17,7 @@ export default function Home() {
       <TeamPage/>
       <PricingSection/>
       <ContactPage/>
-
+      <Bottom/>
     </>
   );
 }
