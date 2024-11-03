@@ -15,12 +15,12 @@ export default function Component() {
     <div className="container mx-auto px-4 py-16 max-w-7xl pt-[10rem]">
       <div className="relative flex flex-col items-center md:flex-row">
         <Topic
-          title="Team"
+          title="Pricing"
           description="Meet the skilled and experienced team behind our successful digital marketing strategies"
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8">
-        {/* MVP Development Package Card */}
+        {/* MVP Development Package Card rand*/}
         <MvpCard/>
         {/* Startup Booster Package Card */}
         <StartupCard/>
