@@ -1,5 +1,5 @@
 "use client";
-import Container from "../Container";
+import Container from "../shared/Container";
 import {
   TopLeftShiningLight,
   TopRightShiningLight,

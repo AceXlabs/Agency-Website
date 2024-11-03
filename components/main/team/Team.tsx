@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import { teamData } from "@/data/process";
-import Container from "./Container";
-import Topic from "./Topic";
+import Container from "../../shared/Container";
+import Topic from "../../shared/Topic";
 import { useRouter } from "next/navigation";
 import { TeamMember } from "@/data/TeamMember";
 

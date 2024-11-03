@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { servicesData } from "@/data/service";
-import Container from "./Container";
-import Topic from "./Topic";
+import Container from "../../shared/Container";
+import Topic from "../../shared/Topic";
 
 function Services() {
   return (

@@ -1,8 +1,8 @@
 
 import { Process } from '@/data/process'
-import Container from './Container'
+import Container from '../../shared/Container'
 import AccordionItem from './AccordianItem'
-import Topic from './Topic'
+import Topic from '../../shared/Topic'
 
 export default function Accordian() {
   return (

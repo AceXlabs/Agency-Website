@@ -46,7 +46,7 @@ export const MvpCard = () => {
           </div>
         </div>
         
-        <Link href="https://cal.com/acex-labs">
+        <Link href="https://cal.com/acex-labs" target="_blank">
         <div className="space-y-4">
           <Button className="w-full bg-gray-800 text-white hover:bg-gray-700 rounded-xl py-6 text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
             Get Started Now →

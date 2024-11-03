@@ -1,12 +1,12 @@
 
-import Accordian from "@/components/Accordian";
-import { Bottom } from "@/components/Bottom";
-import ContactPage from "@/components/Contact";
-import HeroSection from "@/components/main/Hero";
+import Accordian from "@/components/main/accordian/Accordian";
+import { Bottom } from "@/components/main/bottom/Bottom";
+import ContactPage from "@/components/main/contact/Contact";
+import HeroSection from "@/components/main/hero/Hero";
 import PricingSection from "@/components/Pricing/PricingSection";
 
-import Services from "@/components/Services";
-import TeamPage from "@/components/Team";
+import Services from "@/components/main/services/Services";
+import TeamPage from "@/components/main/team/Team";
 
 export default function Home() {
   return (

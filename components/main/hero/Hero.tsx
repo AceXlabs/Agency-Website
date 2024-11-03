@@ -8,7 +8,7 @@ import {
   TopLeftShiningLight,
   TopRightShiningLight,
 } from "@/components/farmui/ShinyLights";
-import Container from "../Container";
+import Container from "../../shared/Container";
 import Link from "next/link";
 
 export default function FUIDarkHeroSectionWithScrolls() {
