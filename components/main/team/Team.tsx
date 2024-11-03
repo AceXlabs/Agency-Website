@@ -12,7 +12,7 @@ const TeamPage = () => {
 
   return (
     <Container>
-      <div className="relative flex flex-col items-center md:flex-row pt-6">
+      <div className="relative flex flex-col items-center md:flex-row pt-[8rem]">
         <Topic
           title="Team"
           description="Meet the skilled and experienced team behind our successful digital marketing strategies"

@@ -21,9 +21,9 @@ export default function FUIDarkHeroSectionWithScrolls() {
       <TopLeftShiningLight />
       <div className="absolute inset-0 h-[600px] w-full bg-transparent opacity-5 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
       <Container>
-        <div className="relative md:h-screen">
-          <div className="flex flex-col md:flex-row justify-between h-full items-center">
-            <div ref={ref} className="mx-auto max-sm:max-w-[400px] max-sm:mt-12">
+        <div className="relative md:h-full">
+          <div className="flex flex-col md:flex-row justify-between h-full items-start">
+            <div ref={ref} className="mx-auto max-sm:max-w-[400px] max-sm:mt-12 lg:mt-[8rem]">
               <GradualSpacing
                 textClassName="justify-start"
                 visiblity={isInView}
