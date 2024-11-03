@@ -9,7 +9,8 @@ import { TeamMember } from "@/data/TeamMember";
 
 const TeamPage = () => {
   const router = useRouter();
-
+  const homeTeamData = teamData.filter((x)=>x.id<=3);
+  
   return (
     <Container>
       <div className="relative flex flex-col items-center md:flex-row pt-[8rem]">
@@ -21,7 +22,7 @@ const TeamPage = () => {
 
       <div className="flex-row items-center py-5" id="team">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
-          {teamData.map((member: TeamMember) => (
+          {homeTeamData.map((member: TeamMember) => (
             <div
               key={member.id}
               className="h-[331px]  px-[35px] py-10 bg-background rounded-[45px]  border border-zinc-900 flex-col justify-start items-start gap-2.5 inline-flex shadow-[0px_5px_0px_#191a23]"
