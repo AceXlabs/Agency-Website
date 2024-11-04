@@ -69,7 +69,6 @@ export const ShareYourVision = () => {
       toast({ title: result.message, variant: "destructive" });
       form.reset();
     }
-    window.location.reload();
     setLoading(false);
   };
   return (
@@ -85,7 +84,7 @@ export const ShareYourVision = () => {
             Share your vision
           </DialogTitle>
           <DialogDescription className="text-gray-500">
-            Tell us about your project idea. We'll get back to you soon!
+            Tell us about your project idea. We&apos;ll get back to you soon!
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
