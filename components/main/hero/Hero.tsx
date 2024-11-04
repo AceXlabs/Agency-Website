@@ -10,6 +10,7 @@ import {
 } from "@/components/farmui/ShinyLights";
 import Container from "../../shared/Container";
 import Link from "next/link";
+import { ShareYourVision } from "../share-your-vision";
 
 export default function FUIDarkHeroSectionWithScrolls() {
   const ref = useRef(null);
@@ -23,7 +24,10 @@ export default function FUIDarkHeroSectionWithScrolls() {
       <Container>
         <div className="relative md:h-full">
           <div className="flex flex-col md:flex-row justify-between h-full items-start">
-            <div ref={ref} className="mx-auto max-sm:max-w-[400px] max-sm:mt-12 lg:mt-[8rem]">
+            <div
+              ref={ref}
+              className="mx-auto max-sm:max-w-[400px] max-sm:mt-12 lg:mt-[8rem]"
+            >
               <GradualSpacing
                 textClassName="justify-start"
                 visiblity={isInView}
@@ -55,9 +59,7 @@ export default function FUIDarkHeroSectionWithScrolls() {
                     Book a call
                   </button>
                 </Link>
-                <button className="flex gap-2 justify-center items-center py-2 max-sm:px-4 px-10 mt-5 text-lg tracking-tighter text-center bg-black rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit font-geist text-md text-white ring-white/80 ring-offset-black hover:scale-[1.02] active:scale-[0.98] active:ring-white/70">
-                  Share your vision
-                </button>
+                <ShareYourVision />
               </div>
             </div>
 
