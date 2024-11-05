@@ -1,25 +1,25 @@
-"use client"
+"use client";
 
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { MoreVertical } from "lucide-react"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { MoreVertical } from "lucide-react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface Project {
-  id: number
-  title: string
-  image: string
+  id: number;
+  title: string;
+  image: string;
   categories: Array<{
-    name: string
-    color: string
-  }>
-  description: string
-  commentCount: number
+    name: string;
+    color: string;
+  }>;
+  description: string;
+  commentCount: number;
   users: Array<{
-    avatar: string
-    name: string
-  }>
+    avatar: string;
+    name: string;
+  }>;
 }
 
 export default function Component() {
@@ -30,23 +30,29 @@ export default function Component() {
       image: "https://i.ibb.co/ggM0Tn4/dashlit.png",
       categories: [
         { name: "Website", color: "text-orange-500 bg-orange-50" },
-        { name: "Extension", color: "text-blue-500 bg-blue-50" }
+        { name: "Extension", color: "text-blue-500 bg-blue-50" },
       ],
       description: "A sleek dashboard extension for modern websites.",
       commentCount: 2,
-      users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
+      users: Array(3).fill({
+        avatar: "/placeholder.svg?height=32&width=32",
+        name: "Team Member",
+      }),
     },
     {
       id: 2,
-      title: "Safeguard",
-      image: "https://i.ibb.co/Y0BVHSN/Screenshot-from-2024-11-04-23-41-09.png",
+      title: "Docs SOL",
+      image: "https://i.ibb.co/b5RDTpG/Screenshot-from-2024-11-04-23-44-26.png",
       categories: [
-        { name: "Web3", color: "text-orange-500 bg-orange-50" },
-        { name: "Product", color: "text-green-500 bg-green-50" }
+        { name: "Product", color: "text-green-500 bg-green-50" },
+        { name: "Launch", color: "text-yellow-500 bg-yellow-50" },
       ],
-      description: "A security solution for Web3 applications.",
-      commentCount: 2,
-      users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
+      description: "Documentation management tool for SOL projects.",
+      commentCount: 10,
+      users: Array(3).fill({
+        avatar: "/placeholder.svg?height=32&width=32",
+        name: "Team Member",
+      }),
     },
     {
       id: 3,
@@ -54,11 +60,14 @@ export default function Component() {
       image: "https://i.ibb.co/FHxrpcr/Screenshot-from-2024-11-04-22-08-08.png",
       categories: [
         { name: "Web3", color: "text-purple-500 bg-purple-50" },
-        { name: "Product", color: "text-blue-500 bg-blue-50" }
+        { name: "Product", color: "text-blue-500 bg-blue-50" },
       ],
       description: "An advanced security platform for Web3 users.",
       commentCount: 5,
-      users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
+      users: Array(3).fill({
+        avatar: "/placeholder.svg?height=32&width=32",
+        name: "Team Member",
+      }),
     },
     {
       id: 4,
@@ -66,45 +75,55 @@ export default function Component() {
       image: "https://i.ibb.co/9pRXdZP/Screenshot-from-2024-11-04-22-09-53.png",
       categories: [
         { name: "Web3", color: "text-orange-500 bg-orange-50" },
-        { name: "Earning platform", color: "text-pink-500 bg-pink-50" }
+        { name: "Earning platform", color: "text-pink-500 bg-pink-50" },
       ],
       description: "An AI-powered earning platform for Web3.",
       commentCount: 8,
-      users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
+      users: Array(3).fill({
+        avatar: "/placeholder.svg?height=32&width=32",
+        name: "Team Member",
+      }),
     },
+
     {
       id: 5,
+      title: "Safeguard",
+      image: "https://i.ibb.co/Y0BVHSN/Screenshot-from-2024-11-04-23-41-09.png",
+      categories: [
+        { name: "Web3", color: "text-orange-500 bg-orange-50" },
+        { name: "Product", color: "text-green-500 bg-green-50" },
+      ],
+      description: "A security solution for Web3 applications.",
+      commentCount: 2,
+      users: Array(3).fill({
+        avatar: "/placeholder.svg?height=32&width=32",
+        name: "Team Member",
+      }),
+    },
+    {
+      id: 6,
       title: "Ved Analytics",
       image: "https://i.ibb.co/vJmkxsB/Screenshot-from-2024-11-04-23-35-10.png",
       categories: [
         { name: "Marketing", color: "text-red-500 bg-red-50" },
-        { name: "Analysis", color: "text-indigo-500 bg-indigo-50" }
+        { name: "Analysis", color: "text-indigo-500 bg-indigo-50" },
       ],
       description: "A marketing and analytics tool for businesses.",
       commentCount: 3,
-      users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
+      users: Array(3).fill({
+        avatar: "/placeholder.svg?height=32&width=32",
+        name: "Team Member",
+      }),
     },
-    {
-      id: 6,
-      title: "Docs SOL",
-      image: "https://i.ibb.co/b5RDTpG/Screenshot-from-2024-11-04-23-44-26.png",
-      categories: [
-        { name: "Product", color: "text-green-500 bg-green-50" },
-        { name: "Launch", color: "text-yellow-500 bg-yellow-50" }
-      ],
-      description: "Documentation management tool for SOL projects.",
-      commentCount: 10,
-      users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
-    }
-  ]
+  ];
 
   return (
     <>
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap");
       `}</style>
       <div className="container mx-auto p-6">
-        <motion.h1 
+        <motion.h1
           className="text-4xl font-bold mb-8 text-center font-['Bebas_Neue'] tracking-wider text-white"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -140,7 +159,10 @@ export default function Component() {
                           className={`inline-block px-3 py-1 rounded-full text-xs font-['Poppins'] font-semibold ${category.color}`}
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.3, delay: 0.2 + index * 0.1 }}
+                          transition={{
+                            duration: 0.3,
+                            delay: 0.2 + index * 0.1,
+                          }}
                         >
                           {category.name}
                         </motion.span>
@@ -150,7 +172,7 @@ export default function Component() {
                       <MoreVertical className="h-4 w-4" />
                     </Button>
                   </div>
-                  <motion.h3 
+                  <motion.h3
                     className="font-['Bebas_Neue'] text-2xl mb-3 text-white"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -158,7 +180,7 @@ export default function Component() {
                   >
                     {project.title}
                   </motion.h3>
-                  <motion.p 
+                  <motion.p
                     className="text-sm text-muted-foreground font-['Poppins']"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -173,5 +195,5 @@ export default function Component() {
         </div>
       </div>
     </>
-  )
+  );
 }
