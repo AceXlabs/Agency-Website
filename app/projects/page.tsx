@@ -14,7 +14,7 @@ interface Project {
     name: string
     color: string
   }>
-  timeAgo: string
+  description: string
   commentCount: number
   users: Array<{
     avatar: string
@@ -32,7 +32,7 @@ export default function Component() {
         { name: "Website", color: "text-orange-500 bg-orange-50" },
         { name: "Extension", color: "text-blue-500 bg-blue-50" }
       ],
-      timeAgo: "1 hour ago",
+      description: "A sleek dashboard extension for modern websites.",
       commentCount: 2,
       users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
     },
@@ -44,7 +44,7 @@ export default function Component() {
         { name: "Web3", color: "text-orange-500 bg-orange-50" },
         { name: "Product", color: "text-green-500 bg-green-50" }
       ],
-      timeAgo: "1 hour ago",
+      description: "A security solution for Web3 applications.",
       commentCount: 2,
       users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
     },
@@ -56,7 +56,7 @@ export default function Component() {
         { name: "Web3", color: "text-purple-500 bg-purple-50" },
         { name: "Product", color: "text-blue-500 bg-blue-50" }
       ],
-      timeAgo: "2 hours ago",
+      description: "An advanced security platform for Web3 users.",
       commentCount: 5,
       users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
     },
@@ -68,7 +68,7 @@ export default function Component() {
         { name: "Web3", color: "text-orange-500 bg-orange-50" },
         { name: "Earning platform", color: "text-pink-500 bg-pink-50" }
       ],
-      timeAgo: "3 hours ago",
+      description: "An AI-powered earning platform for Web3.",
       commentCount: 8,
       users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
     },
@@ -80,7 +80,7 @@ export default function Component() {
         { name: "Marketing", color: "text-red-500 bg-red-50" },
         { name: "Analysis", color: "text-indigo-500 bg-indigo-50" }
       ],
-      timeAgo: "4 hours ago",
+      description: "A marketing and analytics tool for businesses.",
       commentCount: 3,
       users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
     },
@@ -92,7 +92,7 @@ export default function Component() {
         { name: "Product", color: "text-green-500 bg-green-50" },
         { name: "Launch", color: "text-yellow-500 bg-yellow-50" }
       ],
-      timeAgo: "5 hours ago",
+      description: "Documentation management tool for SOL projects.",
       commentCount: 10,
       users: Array(3).fill({ avatar: "/placeholder.svg?height=32&width=32", name: "Team Member" })
     }
@@ -108,17 +108,17 @@ export default function Component() {
           className="text-4xl font-bold mb-8 text-center font-['Bebas_Neue'] tracking-wider text-white"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.2 }}
         >
           Our Extraordinary Projects
         </motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -154,18 +154,18 @@ export default function Component() {
                     className="font-['Bebas_Neue'] text-2xl mb-3 text-white"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3, delay: 0.3 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
                   >
                     {project.title}
                   </motion.h3>
-                  <motion.div 
-                    className="flex justify-between items-center"
+                  <motion.p 
+                    className="text-sm text-muted-foreground font-['Poppins']"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3, delay: 0.4 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
                   >
-                    <span className="text-sm text-muted-foreground font-['Poppins']">{project.timeAgo}</span>
-                  </motion.div>
+                    {project.description}
+                  </motion.p>
                 </div>
               </Card>
             </motion.div>
