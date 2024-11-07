@@ -3,7 +3,6 @@ import { useState } from "react";
 import Link from "next/link";
 import Container from "../../shared/Container";
 import { menuItems } from "@/data/menuitems";
-import { useEffect } from "react";
 import { trackEvent } from "@/lib/analytics";
 
 const Navigation = () => {

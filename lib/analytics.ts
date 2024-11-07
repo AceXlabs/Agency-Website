@@ -1,5 +1,9 @@
 import mixpanel from "mixpanel-browser";
 
+interface TrackEventProperties {
+  [key: string]: string | number | boolean | object | null;
+}
+
 function getMixpanelToken(): string | undefined {
   return process.env.NODE_ENV === "production"
     ? process.env.NEXT_PUBLIC_PROD_MIXPANEL_TOKEN
@@ -24,7 +28,10 @@ export function analyticsInit() {
   }
 }
 
-export function trackEvent(eventName: string, properties?: any) {
+export function trackEvent(
+  eventName: string,
+  properties?: TrackEventProperties
+) {
   try {
     mixpanel.track(eventName, properties);
   } catch (error) {
