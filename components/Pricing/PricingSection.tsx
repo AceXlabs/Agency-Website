@@ -16,7 +16,7 @@ export default function Component() {
       <div className="relative flex flex-col items-center md:flex-row">
         <Topic
           title="Pricing"
-          description="Meet the skilled and experienced team behind our successful digital marketing strategies"
+          description="Transparent, Tailored, and Flexible Pricing to Drive Your Vision Forward"
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8">
