@@ -20,13 +20,13 @@ export default function AboutUs() {
   return (
     <Container>
       <div className="relative flex flex-col items-center md:flex-row mt-32" id="about-us">
-        <Topic title="About Us" description="Learn about our journey, mission, and the team behind our success in digital marketing" />
+        <Topic title="About Us" description="Learn about our journey, mission, and the team behind our success in product development" />
       </div>
       <div className="flex flex-col gap-12 py-10">
         <div className="p-12 bg-zinc-100 dark:bg-background rounded-[45px] border border-zinc-300 dark:border-zinc-700 [box-shadow:0_-20px_80px_-20px_#8686f01f_inset]">
           <h2 className="text-3xl font-medium mb-6">Our Mission</h2>
           <p className="text-xl">
-            Our mission is to empower businesses with innovative digital marketing strategies, cutting-edge AI, Blockchain, App Development, and SEO
+            Our mission is to empower businesses with innovative product development strategies, cutting-edge AI, Blockchain, App Development, and SEO
             solutions. We&apos;re passionate about building meaningful connections between brands and their audiences, using advanced technology and
             data-driven insights to drive exceptional outcomes. By focusing on impactful strategies and seamless digital experiences, we help brands
             not only reach their potential but also thrive in an ever-evolving digital landscape.
