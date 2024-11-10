@@ -20,6 +20,7 @@ import {
 import { Input } from "./input";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { trackEvent } from "@/lib/analytics";
 
 export const ShareYourVision = () => {
   const [loading, setLoading] = useState(false);
@@ -47,6 +48,11 @@ export const ShareYourVision = () => {
 
   const onSubmit = async (data: z.infer<typeof schema>) => {
     setLoading(true);
+
+    trackEvent("Submit Vision Pressed", {
+      Platform: navigator.userAgent.includes("Mobile") ? "Mobile" : "Desktop",
+    });
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {

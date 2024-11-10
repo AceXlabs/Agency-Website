@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Container from "../../shared/Container";
 import { menuItems } from "@/data/menuitems";
+import { trackEvent } from "@/lib/analytics";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +11,12 @@ const Navigation = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const handleBookCall = () => {
+    trackEvent("Book Call Pressed", {
+      ButtonLocation: "Navbar",
+      Platform: navigator.userAgent.includes("Mobile") ? "Mobile" : "Desktop",
+    });
+  };
   return (
     <div className="mt-20">
       <nav className="w-full top-0 left-0 z-50 fixed backdrop-blur-lg">
@@ -65,7 +71,10 @@ const Navigation = () => {
                 ))}
                 <div className="lg:hidden flex items-center justify-center mt-3 gap-4">
                   <Link href="https://cal.com/acex-labs" target="_blank">
-                    <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70">
+                    <button
+                      onClick={handleBookCall}
+                      className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
+                    >
                       Book a call
                     </button>
                   </Link>
@@ -75,7 +84,10 @@ const Navigation = () => {
 
             <div className="hidden lg:flex items-center gap-4">
               <Link href="https://cal.com/acex-labs" target="_blank">
-                <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70">
+                <button
+                  onClick={handleBookCall}
+                  className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
+                >
                   Book a call
                 </button>
               </Link>
