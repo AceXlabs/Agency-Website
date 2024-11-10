@@ -1,16 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"
+"use client";
 import { teamData } from "@/data/process";
 import Container from "../../shared/Container";
 import Topic from "../../shared/Topic";
 import { useRouter } from "next/navigation";
 import { TeamMember } from "@/data/TeamMember";
 
-
 const TeamPage = () => {
   const router = useRouter();
-  const homeTeamData = teamData.filter((x)=>x.id<=3);
-  
+  const homeTeamData = teamData.filter((x) => x.id <= 3);
+
   return (
     <Container>
       <div className="relative flex flex-col items-center md:flex-row pt-[8rem]">
@@ -54,10 +53,11 @@ const TeamPage = () => {
       </div>
 
       <div className="w-full justify-center md:justify-end items-center inline-flex mr-7">
-        <button className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
-        onClick={()=>{
-          router.push("/team");
-        }}
+        <button
+          className="flex gap-2 justify-center items-center py-2 px-10 mt-5 text-lg tracking-tighter text-center bg-gradient-to-br rounded-xl ring-2 ring-offset-2 transition-all hover:ring-transparent group/button w-fit from-zinc-100 to-zinc-300 font-geist text-md text-zinc-900 ring-zinc-500/80 ring-offset-zinc-950 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
+          onClick={() => {
+            router.push("/team");
+          }}
         >
           See All
           <div

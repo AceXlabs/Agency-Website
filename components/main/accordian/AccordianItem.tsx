@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 interface AccordionProps {
   index: number;
@@ -16,14 +16,17 @@ const AccordionItem = ({ index, title, description }: AccordionProps) => {
   useEffect(() => {
     // Handle clicks outside of accordion
     const handleClickOutside = (event: MouseEvent) => {
-      if (accordionRef.current && !accordionRef.current.contains(event.target as Node)) {
+      if (
+        accordionRef.current &&
+        !accordionRef.current.contains(event.target as Node)
+      ) {
         setIsActive(false);
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -37,12 +40,13 @@ const AccordionItem = ({ index, title, description }: AccordionProps) => {
     <div
       ref={accordionRef}
       className={`accordion__item group ${
-        isActive ? 'bg-background' : 'bg-background'
+        isActive ? "bg-background" : "bg-background"
       } overflow-hidden w-full transition-all duration-500 mb-[30px] rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]`}
       style={{
-        height: isActive && contentRef.current 
-          ? `${contentRef.current.scrollHeight + 160}px` 
-          : '160px'
+        height:
+          isActive && contentRef.current
+            ? `${contentRef.current.scrollHeight + 160}px`
+            : "160px",
       }}
     >
       <button
@@ -59,7 +63,7 @@ const AccordionItem = ({ index, title, description }: AccordionProps) => {
         <div className="bg-gray-900 w-[58px] h-[58px] flex justify-center items-center rounded-full border border-dark">
           <div
             className={`accordion__icon h-10 w-10 transition-transform duration-300 flex justify-center items-center relative ${
-              isActive ? 'rotate-180 collapsed' : ''
+              isActive ? "rotate-180 collapsed" : ""
             }`}
             aria-hidden="true"
           />

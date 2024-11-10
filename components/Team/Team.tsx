@@ -10,7 +10,6 @@ import { TeamSection } from "./TeamSection";
 import { teamData } from "@/data/process";
 import { useInView } from "framer-motion";
 
-
 export default function Team() {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -24,8 +23,8 @@ export default function Team() {
         <div className="relative h-screen">
           <div className="flex flex-col md:flex-row justify-between h-full items-center mx-auto">
             <div ref={ref} className="mx-auto max-sm:max-w-[400px] md:mt-72">
-              <Hero isInView={isInView}/>
-              <TeamSection teamData={teamData}/>
+              <Hero isInView={isInView} />
+              <TeamSection teamData={teamData} />
             </div>
 
             <div className="absolute right-0 bottom-0 left-0 mx-auto opacity-20"></div>
