@@ -108,6 +108,14 @@ export const teamData= [
     },
     {
         "id":10,
+        "title": "Full Stack Developer",
+        "name": "Pratik",
+        "description": "2+ years of experience in Full Stack Development.",
+        "profile": "https://avatars.githubusercontent.com/u/172252059?v=4",
+        "link": "https://x.com/neexzz_tw"
+    },
+    {
+        "id":11,
         "title": "Full Stack Blockchain Developer",
         "name": "Prince Yadav",
         "description": "2+ years of experience in Full Stack Blockchain Development.",
@@ -115,7 +123,7 @@ export const teamData= [
         "link": "https://x.com/m_jinprince"
     },
     {
-        "id":11,
+        "id":12,
         "title": "Senior Backend Developer",
         "name": "Shubham Singh",
         "description": "4+ years of experience working in MERN, Rust and Go.",
@@ -123,7 +131,7 @@ export const teamData= [
         "link": "https://x.com/shubh_exists"
     },
     {
-        "id":12,
+        "id":13,
         "title": "Smart Contract Developer",
         "name": "Krishna",
         "description": "2+ years of experience Smart Contract development and testing",
