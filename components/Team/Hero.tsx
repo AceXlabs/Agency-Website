@@ -23,7 +23,6 @@ export const Hero = ({isInView}:{isInView:boolean}) => {
               className="max-w-[400px] text-6xl font-normal tracking-tighter text-transparent text-white max-sm:text-4xl font-geist"
               text={"universal"}
               />
-
       <p className="sm:break-words animation-delay-2 fade-in-heading text-white/50 mt-10">
         Your priceless personal data shouldn&apos;t be stuck in a device
         ecosystem. It should be OS agnostic,
