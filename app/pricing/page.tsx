@@ -1,11 +1,10 @@
-import PricingSection from "@/components/Pricing/PricingSection"
+import PricingSection from "@/components/Pricing/PricingSection";
 
-const page = ()=> {
-    
-    return (
-        <div>
-            <PricingSection/>
-        </div>
-    )
-}
+const page = () => {
+  return (
+    <div>
+      <PricingSection />
+    </div>
+  );
+};
 export default page;

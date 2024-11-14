@@ -66,7 +66,6 @@ const reviews = [
   },
 ];
 
-
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
@@ -88,7 +87,7 @@ const ReviewCard = ({
         // light styles
         "border-white/10 ",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
       <div className="flex flex-row gap-1 items-center">
@@ -118,7 +117,6 @@ const MarqueeDemoVertical = () => {
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      
     </div>
   );
 };

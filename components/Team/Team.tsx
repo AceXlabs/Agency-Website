@@ -10,7 +10,6 @@ import { TeamSection } from "./TeamSection";
 import { teamData } from "@/data/process";
 import { useInView } from "framer-motion";
 
-
 export default function Team() {
   const ref = useRef(null);
   const isInView = useInView(ref);

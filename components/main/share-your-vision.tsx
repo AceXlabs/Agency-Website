@@ -37,6 +37,13 @@ export const ShareYourVision = () => {
 
   const form = useForm<z.infer<typeof schema>>({
     resolver: zodResolver(schema),
+    defaultValues: {
+      name: "",
+      email: "",
+      projectIdea: "",
+      access_key: accessKey,
+      xUsername: "",
+    },
   });
 
   const onValueChange = (e: React.ChangeEvent<HTMLInputElement>) => {

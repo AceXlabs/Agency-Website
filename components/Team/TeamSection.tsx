@@ -1,5 +1,5 @@
-import { TeamMember } from '@/data/TeamMember';
-import Image from 'next/image';
+import { TeamMember } from "@/data/TeamMember";
+import Image from "next/image";
 
 interface TeamSectionProps {
   teamData: TeamMember[];
@@ -9,7 +9,10 @@ interface TeamSectionProps {
 export const TeamSection = ({ teamData }: TeamSectionProps) => {
   return (
     <>
-      <h2 id="team" className="mb-2 mt-10 text-2xl font-bold leading-relaxed sm:mt-20">
+      <h2
+        id="team"
+        className="mb-2 mt-10 text-2xl font-bold leading-relaxed sm:mt-20"
+      >
         Meet the team
       </h2>
       <div className="flex-row items-center py-5" id="team">
@@ -23,7 +26,13 @@ export const TeamSection = ({ teamData }: TeamSectionProps) => {
                 <div className="self-stretch justify-start items-start inline-flex">
                   <div className="grow shrink basis-0 justify-start items-center gap-8 flex">
                     <div className="h-[102.82px] left-0 top-0 relative">
-                      <Image src={member.profile} alt={member.name} height={100} width={100} className="rounded-full" />
+                      <Image
+                        src={member.profile}
+                        alt={member.name}
+                        height={100}
+                        width={100}
+                        className="rounded-full"
+                      />
                     </div>
                     <div className="flex-col justify-end items-start inline-flex">
                       <div className="text-lg font-normal">{member.title}</div>
